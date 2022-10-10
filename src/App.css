@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+.calculator-all{
+  display: flex;
+  background-color: rgb(11, 28, 43);
+  justify-content: space-around;
+  align-items: center;
+height: 100vh;
+font-family: 'Karla' sans-serif;
+overflow-x: hidden;
+
+}
+.alt{
+  font-size: 2em;
+  color: #F5EFE6;
+  text-transform: uppercase;
+}
+.functions{
+  max-width: 70%;
+  border: .5px solid black;
+  display:flex ;
+ padding: 1em;
+flex-direction: column;
+
+}
+.keys{
+  display: grid;
+  grid-template-columns: repeat( 3,4em);
+  grid-template-rows: minmax(6, auto) repeat(4 , 6rem); 
+ 
+}
+.symbols{
+  padding: 1em;
+
+  display: flex;
+  background-color: rgb(35, 35, 35);
+ justify-content: space-between;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.symbol{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  background-color: lightgray;
+  border: none;
+
+  border-radius: 5px;
+}
+.symbol > button{
+  color: rgb(187, 90, 15);
+  font-size: 2em;
+  font-weight: 400;
+}
+.clear{
+  letter-spacing: 5px;
+}
+.all-keys{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 1em;
+  background-color: rgb(35, 35, 35);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.output{
+  display: grid;
+border: .5px solid rgb(227, 138, 65);
+  height: 25px;
+  border-top-left-radius:5px ;
+  border-top-right-radius: 5px;
+  color: #F5EFE6;
+ 
+padding: 1em;
+background-color: #080808;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+
+button{
+  border-radius: 50px;
+margin: .5em .5em;  
+border: none;
+border-radius: 50px;
+width: 25px;
+grid-area: 50px;
+background: none;
+color: white;
+  font-family:'Karla' sans-serif;
+font-size: 1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+button:hover{
+  border-bottom: .5px solid gray;
+  box-shadow:44px 35px 38px -5px rgba(18,15,15,0.85);
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-property: all;
+  transition-duration: 2s;
+  
+}
+@media  screen and (max-width: 800px) {
+  .calculator-all{
+    display: flex;
+    background-color: rgb(11, 28, 43);
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  height: 100vh;
+  font-family: 'Karla' sans-serif;
+  overflow-x: hidden;
   }
-  to {
-    transform: rotate(360deg);
+  .alt{
+    text-align: center;
+    margin: 1em;
   }
 }
