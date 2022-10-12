@@ -111,6 +111,9 @@ button:hover{
   font-family: 'Karla' sans-serif;
   overflow-x: hidden;
   }
+  .functions{
+    max-width: 80%;
+  }
   .alt{
     text-align: center;
     margin: 1em;
