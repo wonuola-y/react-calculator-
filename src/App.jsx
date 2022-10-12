@@ -39,7 +39,7 @@ export default function App() {
   <button onClick={ e => {
   try {
     setValue(
-      String(eval(values)).length > 3 && String(eval(values)).includes('.') ? String(eval(values).toFixed(4)) : String (eval (values))
+      String(eval(values)).length > 9 && String(eval(values)).includes('.') ? String(eval(values).toFixed(7)) : String (eval (values))
     )
   }
   catch(err){

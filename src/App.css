@@ -16,7 +16,7 @@ overflow-x: hidden;
   text-transform: uppercase;
 }
 .functions{
-  max-width: 23%;
+  max-width: 40%;
   border: .5px solid black;
   display:flex ;
  padding: 1em;
