@@ -16,7 +16,7 @@ overflow-x: hidden;
   text-transform: uppercase;
 }
 .functions{
-  max-width: 70%;
+  max-width: 23%;
   border: .5px solid black;
   display:flex ;
  padding: 1em;
@@ -63,6 +63,7 @@ flex-direction: column;
   border-bottom-right-radius: 5px;
 }
 .output{
+  overflow-x: hidden;
   display: grid;
 border: .5px solid rgb(227, 138, 65);
   height: 25px;

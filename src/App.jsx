@@ -1,6 +1,7 @@
 import React, { useState} from 'react'
 import './App.css';
 
+
 export default function App() {
 
   const [values, setValue] = useState('');
@@ -15,8 +16,11 @@ export default function App() {
     
     >{i}</button>
   ));
- 
-  // btn[btn.length-1].style.color = 'red';
+
+   function handleClick (e)  {
+    setValue(values + e.target.value)
+  }
+
     return (
 
     <div className='calculator-all'>
@@ -44,14 +48,14 @@ console.log('warning');
  
 }}
 value = '='
-> =</button>
+> = </button>
   </div>
- <div className="symbol">
- <button onClick={ e => setValue(values + e.target.value)} value="+">+</button>
+ <div className="symbol"> 
+ <button  onClick={handleClick} value="+"> +</button>
 
-<button onClick={ e => setValue(values + e.target.value)} value="-">-</button>
-<button onClick={ e => setValue(values + e.target.value)}value="*">*</button>
-<button onClick={ e => setValue(values + e.target.value)} value="/">/</button>
+<button onClick={handleClick} value="-">-</button>
+<button onClick={handleClick} value="*"> *</button>
+<button onClick={handleClick} value="/">/</button>
 
 
  </div>
